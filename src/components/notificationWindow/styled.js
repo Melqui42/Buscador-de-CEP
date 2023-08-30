@@ -13,7 +13,7 @@ export const baseStyledNotification = css`
   border-bottom: 3px solid #12a87e;
   border-radius: 0.5rem 0.2rem 0.2rem 0.5rem;
 
-  .center {
+  .centerWindow {
     gap: 1rem;
     display: flex;
     padding: 1rem;
@@ -28,7 +28,7 @@ export const baseStyledNotification = css`
       background-color: #029ff9;
     }
 
-    .content {
+    article {
       h1 {
         color: white;
         font-size: 1.2rem;
@@ -85,8 +85,8 @@ export const Container = styled.div`
       width: 300px;
       right: 10px;
 
-      .center {
-        .content {
+      .centerWindow {
+        article {
           h1 {
             color: white;
             font-size: 1rem;
@@ -103,8 +103,8 @@ export const Container = styled.div`
     .notificationHide {
       width: 300px;
 
-      .center {
-        .content {
+      .centerWindow {
+        article {
           h1 {
             color: white;
             font-size: 1rem;

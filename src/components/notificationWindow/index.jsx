@@ -8,12 +8,12 @@ export default function NotificationWindow(props) {
   return (
     <C.Container>
       <div className={props.state ? "notificationShow" : "notificationHide"}>
-        <div className="center">
+        <div className="centerWindow">
           {props.children}
-          <div className="content">
+          <article>
             <h1>{props.title}</h1>
             <p>{props.description}</p>
-          </div>
+          </article>
         </div>
         <button className="closeButton" onClick={props.stateFunction}>
           <Ai.AiOutlineClose className="icon" />
